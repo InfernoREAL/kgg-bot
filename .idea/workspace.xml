@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303d7fc-fc11-4afc-8b38-1a8afc6b2e0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plugin_sdk/Plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PluginManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Git.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Handler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin_sdk/Plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/Plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PluginManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +49,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/PluginManager" />
+      <recent name="$PROJECT_DIR$/src/PluginManager/Handlers" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -69,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589893952006</updated>
       <workItem from="1589893954713" duration="8470000" />
-      <workItem from="1589904706940" duration="8458000" />
+      <workItem from="1589904706940" duration="16682000" />
     </task>
     <servers />
   </component>
@@ -85,5 +85,9 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="476" y="188" width="1022" height="737" key="SettingsEditor/54.27.1866.1053@54.27.1866.1053" timestamp="1589895008401" />
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1589920270393">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1589920270393" />
   </component>
 </project>

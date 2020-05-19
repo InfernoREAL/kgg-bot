@@ -47,6 +47,7 @@ if (env.hasOwnProperty('DISCORD_TOKEN')) {
                         // });
                         //
                         // Client.login(env.DISCORD_TOKEN).then(() => {}).catch(log);
+
                     });
 
                     PluginManager.load(env.PLUGINS, {
