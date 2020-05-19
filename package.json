@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/darknessxk/avc-bot#readme",
   "dependencies": {
+    "better-queue": "^3.8.10",
     "discord.js": "^12.2.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "simple-git": "^2.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

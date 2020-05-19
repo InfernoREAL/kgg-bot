@@ -1,7 +1,7 @@
 const fs = require('fs');
-const dotenv = require('dotenv');
+const dotEnv = require('dotenv');
 const Discord = require('discord.js');
-const DiscordCommands = new (require('./Discord/Discord.Commands.Dictionary'))("--");
+const CPluginManager = require('./PluginManager');
 
 const log = (...msg) => {
     (console.log).apply(console.log, ["[AVC Bot]", ...msg]);
@@ -10,12 +10,13 @@ const log = (...msg) => {
 if (!fs.existsSync(".env")) {
     log("File \".env\" missing, creating and default one");
 
-    fs.writeFileSync(".env", `
-    DISCORD_TOKEN=XXXXXXXXXXXXXXXXXXXXXX
-    `.trim());
+    fs.writeFileSync(".env", `DISCORD_TOKEN="XXXXXXXXXXXXXXXXXXXXXX"
+PLUGINS_REPOSITORY="https://github.com/darknessxk/kgg-bot-plugins/"
+PLUGINS_ENABLED=1
+PLUGINS="VoiceManager"`.trim());
 }
 
-const envParsed = dotenv.config({
+const envParsed = dotEnv.config({
     path: ".env"
 });
 
@@ -29,13 +30,32 @@ if (env.hasOwnProperty('DISCORD_TOKEN')) {
 
     const Client = new Discord.Client();
 
-    Client.on('ready', () => {
-        log(`Logged in as "${Client.user.tag}"`);
-        log(`Initialized ${DiscordCommands.getCommandsCount()} command(s)`);
-        log(`Commands List: ${DiscordCommands.fetchCommands().join(', ')}`);
-    });
+    if (env.hasOwnProperty('PLUGINS_ENABLED') && env.hasOwnProperty('PLUGINS_REPOSITORY')) {
+        if (env.PLUGINS_ENABLED) {
+            const PluginManager = new CPluginManager(env.PLUGINS_REPOSITORY);
 
-    Client.on('message', msg => DiscordCommands.messageSent(msg));
+            PluginManager.on('error', e => {
+                log(e);
+                process.exit(-1);
+            });
 
-    Client.login(env.DISCORD_TOKEN);
+            PluginManager.on('initialized', () => {
+                if (env.hasOwnProperty('PLUGINS')) {
+                    PluginManager.on("ready", () => {
+                        // Client.on('ready', () => {
+                        //     log(`Logged in as "${Client.user.tag}"`);
+                        // });
+                        //
+                        // Client.login(env.DISCORD_TOKEN).then(() => {}).catch(log);
+                    });
+
+                    PluginManager.load(env.PLUGINS, {
+                        DiscordClient: Client
+                    });
+                }
+            });
+
+            PluginManager.init();
+        }
+    }
 }
