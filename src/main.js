@@ -1,7 +1,7 @@
 const fs = require('fs');
 const dotEnv = require('dotenv');
 const Discord = require('discord.js');
-const CPluginManager = require('./PluginManager');
+const CPluginManager = require('./PluginManager/PluginManager');
 
 const log = (...msg) => {
     (console.log).apply(console.log, ["[AVC Bot]", ...msg]);

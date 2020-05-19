@@ -10,7 +10,7 @@ const log = (...msg) => {
 
 function loadHandlers() {
     let classes = {};
-    const classesPath = path.join(__dirname, "PluginManager", "Handlers");
+    const classesPath = path.join(__dirname, "Handlers");
 
     fs.readdirSync(classesPath).forEach(file => {
         if (file.substr(-3, 3) === '.js') {

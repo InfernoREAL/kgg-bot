@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303d7fc-fc11-4afc-8b38-1a8afc6b2e0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Git.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin_sdk/Plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/Plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PluginManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PluginManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589893952006</updated>
       <workItem from="1589893954713" duration="8470000" />
-      <workItem from="1589904706940" duration="16682000" />
+      <workItem from="1589904706940" duration="16918000" />
     </task>
     <servers />
   </component>
