@@ -1,1 +1,2 @@
-# Auto Voice Channel Bot
+# KGG Core Bot
+Plugin Based Bot
