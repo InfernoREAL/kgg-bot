@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303d7fc-fc11-4afc-8b38-1a8afc6b2e0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/Discord/Commands/Create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/Discord/Commands/Record.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/Discord/Discord.Commands.Dictionary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/Discord/Discord.Commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Discord/Commands/Create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Discord/Commands/Record.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Discord/Discord.Commands.Dictionary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Discord/Discord.Commands.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589893952006</updated>
       <workItem from="1589893954713" duration="8470000" />
-      <workItem from="1589904706940" duration="17548000" />
+      <workItem from="1589904706940" duration="17831000" />
     </task>
     <servers />
   </component>

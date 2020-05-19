@@ -32,7 +32,7 @@ module.exports = class PluginManager extends EventEmitter {
 
         this.repository = repository;
         this.credentials = credentials;
-        this.pluginsFolder = path.join(__dirname, "plugins");
+        this.pluginsFolder = path.join(path.join(__dirname, "..", ".."), "plugins");
         this.getPluginPath = (pluginName) => path.join(this.pluginsFolder, pluginName);
         this.repoFolder = this.getPluginPath('repository-core');
         this.pendingCount = 0;

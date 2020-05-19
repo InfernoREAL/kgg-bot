@@ -1,3 +1,6 @@
+# plugins folder
+plugins/
+
 # Logs
 logs
 *.log
