@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303d7fc-fc11-4afc-8b38-1a8afc6b2e0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ExamplePlugin/AutoVoiceManagement/Plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/ExamplePluginSDK/ExamplePlugin/Plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamplePlugin/AutoVoiceManagement/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ExamplePluginSDK/ExamplePlugin/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamplePlugin/AutoVoiceManagement/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ExamplePluginSDK/ExamplePlugin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamplePlugin/repository-core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ExamplePluginSDK/RepositoryExample/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExamplePlugin/repository-core/plugins.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExamplePluginSDK/RepositoryExample/plugins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamplePluginSDK/RepositoryExample/plugins.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExamplePluginSDK/RepositoryExample/plugins.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589893952006</updated>
       <workItem from="1589893954713" duration="8470000" />
-      <workItem from="1589904706940" duration="18006000" />
+      <workItem from="1589904706940" duration="18088000" />
     </task>
     <servers />
   </component>
