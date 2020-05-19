@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303d7fc-fc11-4afc-8b38-1a8afc6b2e0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamplePlugin/AutoVoiceManagement/Plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamplePlugin/AutoVoiceManagement/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamplePlugin/AutoVoiceManagement/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamplePlugin/repository-core/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamplePlugin/repository-core/plugins.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ExamplePlugin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -53,6 +55,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ExamplePlugin" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Discord/Commands" />
     </key>
@@ -68,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589893952006</updated>
       <workItem from="1589893954713" duration="8470000" />
-      <workItem from="1589904706940" duration="17831000" />
+      <workItem from="1589904706940" duration="17943000" />
     </task>
     <servers />
   </component>
