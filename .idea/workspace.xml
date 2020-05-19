@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303d7fc-fc11-4afc-8b38-1a8afc6b2e0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/PluginManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/Discord/Commands/Create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/Discord/Commands/Record.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/Discord/Discord.Commands.Dictionary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/Discord/Discord.Commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Discord/Commands/Create.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Discord/Commands/Record.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Discord/Discord.Commands.Dictionary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Discord/Discord.Commands.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -45,6 +56,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement" />
       <recent name="$PROJECT_DIR$/src/PluginManager" />
       <recent name="$PROJECT_DIR$/src/PluginManager/Handlers" />
       <recent name="$PROJECT_DIR$/src" />
@@ -65,12 +77,22 @@
       <option name="presentableId" value="Default" />
       <updated>1589893952006</updated>
       <workItem from="1589893954713" duration="8470000" />
-      <workItem from="1589904706940" duration="16918000" />
+      <workItem from="1589904706940" duration="17548000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="720" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589897975641">

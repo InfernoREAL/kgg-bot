@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const CPluginManager = require('./PluginManager/PluginManager');
 
 const log = (...msg) => {
-    (console.log).apply(console.log, ["[AVC Bot]", ...msg]);
+    (console.log).apply(console.log, ["[KGG Bot]", ...msg]);
 };
 
 if (!fs.existsSync(".env")) {
@@ -41,13 +41,12 @@ if (env.hasOwnProperty('DISCORD_TOKEN')) {
 
             PluginManager.on('initialized', () => {
                 if (env.hasOwnProperty('PLUGINS')) {
-                    PluginManager.on("ready", () => {
-                        // Client.on('ready', () => {
-                        //     log(`Logged in as "${Client.user.tag}"`);
-                        // });
-                        //
-                        // Client.login(env.DISCORD_TOKEN).then(() => {}).catch(log);
+                    PluginManager.on("ready", (modules) => {
+                        Client.on('ready', () => {
+                            log(`Logged in as "${Client.user.tag}"`);
+                        });
 
+                        Client.login(env.DISCORD_TOKEN).then(() => {}).catch(log);
                     });
 
                     PluginManager.load(env.PLUGINS, {

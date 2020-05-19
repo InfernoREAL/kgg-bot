@@ -36,6 +36,7 @@ module.exports = class PluginManager extends EventEmitter {
         this.getPluginPath = (pluginName) => path.join(this.pluginsFolder, pluginName);
         this.repoFolder = this.getPluginPath('repository-core');
         this.pendingCount = 0;
+        this.loadedModules = {};
         this.handlers = loadHandlers();
 
         if (this.handlers.hasOwnProperty(handler)) {
@@ -95,12 +96,15 @@ module.exports = class PluginManager extends EventEmitter {
 
                             if (result.success) {
                                 log("Load Success", result);
+                                // initialize this mf
+                                this.loadedModules[plugin] = new result.object();
+                                this.loadedModules[plugin].init(args);
                             } else {
                                 log("Load Failure", result);
                             }
 
                             if (this.pendingCount <= 0) {
-                                this.emit('ready');
+                                this.emit('ready', this.loadedModules);
                             }
                         });
                     }
