@@ -1,0 +1,15 @@
+{
+  "repositories": [
+    {
+      "name": "Test Repository",
+      "handler": "git",
+      "arguments": {
+        "url": "https://gitserver.tld/repository.git"
+      }
+    }
+  ],
+
+  "plugins": [
+    "pluginName"
+  ]
+}

@@ -1,28 +1,28 @@
-const { EventEmitter } = require('events');
-const fs = require('fs');
-const path = require('path');
+import {EventEmitter} from "events";
 
-module.exports = class Handler extends EventEmitter {
+import fs from "fs";
+import path from "path";
+
+export default class BaseHandler extends EventEmitter {
     log = (...msg) => {
         (console.log).apply(console.log, ["[Plugin Handler]", ...msg]);
     };
 
-    constructor(plugin) {
+    constructor(plugin, basePath) {
         super();
         this.Plugin = plugin;
         this.firstRun = false;
-        this.pluginMain = path.join(this.Plugin.downloadPath, "index.js");
+        this.InstallPath = path.join(basePath, this.Plugin.name);
+        this.pluginMain = path.join(this.InstallPath, "index.js");
 
-        this.mainRelativePath = path.relative(__dirname, this.pluginMain);
-        this.mainRelativePath = this.mainRelativePath.substr(0, this.mainRelativePath.length - 3);
 
         this.checkFolder();
     }
 
     checkFolder() {
-        if (!fs.existsSync(this.Plugin.downloadPath)) {
+        if (!fs.existsSync(this.InstallPath)) {
             this.log("Folder created");
-            fs.mkdirSync(this.Plugin.downloadPath);
+            fs.mkdirSync(this.InstallPath);
             this.firstRun = true;
         }
     }
@@ -49,9 +49,8 @@ module.exports = class Handler extends EventEmitter {
 
     validatePlugin() {
         if (fs.existsSync(this.pluginMain)) {
-
-            const externalPlugin = new (require(this.mainRelativePath))();
-            const basePlugin = new (require('../Plugin').default)();
+            const externalPlugin = new (require(this.pluginMain))();
+            const basePlugin = new (require('../../SDK/PluginBase'))();
 
             return this.validatePluginSdk(externalPlugin, basePlugin); // soon ill add new methods
         } else {

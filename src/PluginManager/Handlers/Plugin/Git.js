@@ -1,17 +1,17 @@
-const gitClient = require('simple-git');
-const Handler = require('./Handler');
-const path = require('path');
-const fs = require('fs');
+import gitClient from "simple-git";
+import BaseHandler from "./BaseHandler";
+import path from "path";
+import fs from "fs";
 
-module.exports = class Git extends Handler {
+export default class Git extends BaseHandler {
     constructor(plugin) {
-        super(plugin);
+        super(plugin, process.env.KGGPLUGINSPATH);
 
         this._checkFolder = this.checkFolder;
 
         this.checkFolder = () => {
             this._checkFolder();
-            const gitPath = path.join(this.Plugin.downloadPath, '.git');
+            const gitPath = path.join(this.InstallPath, '.git');
 
             if (!fs.existsSync(gitPath)) {
                 this.firstRun = true;
@@ -20,7 +20,7 @@ module.exports = class Git extends Handler {
 
         this.InitializePlugin = () => {
             if (this.validatePlugin()) {
-                this.emit("loaded", require(this.mainRelativePath));
+                this.emit("loaded", require(this.pluginMain));
             }
         };
 
@@ -62,12 +62,12 @@ module.exports = class Git extends Handler {
     }
 
     loadPlugin() {
-        const pluginClient = gitClient(this.Plugin.downloadPath);
+        const pluginClient = gitClient(this.InstallPath);
         this.log("Git Client initialized");
 
         if (this.firstRun) {
             this.log("Plugin is being installed");
-            pluginClient.clone(this.Plugin.pluginInfo.downloadUrl, '.', err => {
+            pluginClient.clone(this.Plugin.arguments.url, '.', err => {
                 if (err !== null) {
                     this.emit('failure', err);
                     return undefined;

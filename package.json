@@ -1,23 +1,23 @@
 {
-  "name": "avc-bot",
+  "name": "kgg-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node ./src/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node ./src/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/darknessxk/avc-bot.git"
+    "url": "git+https://github.com/darknessxk/kgg-bot.git"
   },
   "author": "darknessxk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/darknessxk/avc-bot/issues"
+    "url": "https://github.com/darknessxk/kgg-bot/issues"
   },
-  "homepage": "https://github.com/darknessxk/avc-bot#readme",
+  "homepage": "https://github.com/darknessxk/kgg-bot#readme",
   "dependencies": {
+    "@babel/register": "^7.9.0",
     "better-queue": "^3.8.10",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",

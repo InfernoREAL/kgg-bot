@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303d7fc-fc11-4afc-8b38-1a8afc6b2e0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/plugins.example.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/DynamicLoading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Repository/BaseHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Repository/DiskHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Repository/Git.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/PluginRepository.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PluginManager/SDK/ExamplePluginSDK/ExamplePlugin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamplePluginSDK/ExamplePlugin/Plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/SDK/PluginBase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamplePluginSDK/ExamplePlugin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamplePluginSDK/ExamplePlugin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/SDK/ExamplePluginSDK/ExamplePlugin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamplePluginSDK/RepositoryExample/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/SDK/ExamplePluginSDK/RepositoryExample/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamplePluginSDK/RepositoryExample/plugins.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PluginManager/Handlers/Git.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Plugin/Git.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PluginManager/Handlers/Handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/Handlers/Plugin/BaseHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PluginManager/Plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PluginManager/PluginManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,12 +33,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:darknessxk/kgg-avm.git" />
+        <option value="git@github.com:darknessxk/kgg-bot-plugins-repository.git" />
+        <option value="git@github.com:darknessxk/kgg-bot.git" />
+      </set>
+    </option>
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -37,22 +68,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ExamplePlugin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/PluginManager/Handlers/Repository" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/PluginManager/SDK" />
+      <recent name="$PROJECT_DIR$/src/PluginManager/Handlers/Repository" />
+      <recent name="$PROJECT_DIR$/src/PluginManager/Handlers/Plugin" />
       <recent name="$PROJECT_DIR$/src/PluginManager/plugins/AutoVoiceManagement" />
       <recent name="$PROJECT_DIR$/src/PluginManager" />
-      <recent name="$PROJECT_DIR$/src/PluginManager/Handlers" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/PluginManager/Handlers/Repository" />
+      <recent name="$PROJECT_DIR$/ExamplePluginSDK/ExamplePlugin" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ExamplePlugin" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/Discord/Commands" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -66,7 +100,10 @@
       <option name="presentableId" value="Default" />
       <updated>1589893952006</updated>
       <workItem from="1589893954713" duration="8470000" />
-      <workItem from="1589904706940" duration="18165000" />
+      <workItem from="1589904706940" duration="19166000" />
+      <workItem from="1589926711686" duration="1135000" />
+      <workItem from="1590082584027" duration="21426000" />
+      <workItem from="1590161869968" duration="1101000" />
     </task>
     <servers />
   </component>
@@ -84,17 +121,29 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="720" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589897975641">
+    <state x="720" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590100326851">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="720" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1589897975641" />
-    <state x="476" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1589895008401">
+    <state x="720" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1590100326851" />
+    <state x="476" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1590100562000">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="476" y="188" width="1022" height="737" key="SettingsEditor/54.27.1866.1053@54.27.1866.1053" timestamp="1589895008401" />
-    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1589920270393">
+    <state x="476" y="188" width="1022" height="737" key="SettingsEditor/54.27.1866.1053@54.27.1866.1053" timestamp="1590100562000" />
+    <state x="154" y="127" width="1666" height="853" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1590091944286">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1589920270393" />
+    <state x="154" y="127" width="1666" height="853" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1590091944286" />
+    <state x="625" y="126" width="724" height="855" key="find.popup" timestamp="1590162301267">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="625" y="126" width="724" height="855" key="find.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1590162301267" />
+    <state x="651" y="252" width="672" height="677" key="run.anything.popup" timestamp="1590104949370">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="651" y="252" width="672" height="677" key="run.anything.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1590104949370" />
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1590162816895">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1590162816895" />
   </component>
 </project>

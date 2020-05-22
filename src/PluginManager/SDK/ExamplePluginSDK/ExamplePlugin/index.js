@@ -1,6 +1,6 @@
-const BasePlugin = require('./Plugin').default;
+import PluginBase from "../../PluginBase";
 
-module.exports = class ExamplePlugin extends BasePlugin {
+module.exports = class ExamplePlugin extends PluginBase {
     constructor() {
         super("ExamplePlugin", "1");
     }

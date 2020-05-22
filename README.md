@@ -1,2 +1,2 @@
 # KGG Core Bot
-Plugin Based Bot
+PluginBase Based Bot
